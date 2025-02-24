@@ -16,7 +16,7 @@ def calculate_average_grades(input_filename, output_filename):
                 name = parts[0]
                 grades = list(map(int, parts[1:]))
                 average = sum(grades) / len(grades) if grades else 0
-                outfile.write(f"{name} {average:.1f}\n")
+                outfile.write(f"{name} {average}\n")
     except FileNotFoundError:
         print("Error: Input file not found.")
 
